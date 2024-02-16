@@ -103,10 +103,40 @@ a{
 }
 .information{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
+    padding: 38px;
 }
 .info-header{
-    font: 36px bolder #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1f2937;
+}
+.info-section{
+    border: solid red 1px;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    width: 100%;
+}
+.info-tile{
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1 1 auto;
+    max-width: 200px;
+    margin: 36px;
+}
+.info-tile img{
+    border: solid #3882f6 5px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+}
+.info-tile-text{
+    text-wrap: wrap;
 }
 .quote{
 
