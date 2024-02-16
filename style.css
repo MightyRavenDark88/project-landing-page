@@ -138,8 +138,10 @@ a{
     color: rgb(97, 97, 97);
     font-size: 18px;
 }
-.quote{
-
+.quote-box{
+    display: flex;
+    background-color: #e5e7eb;
+    flex-direction: column;
 }
 .advertisement{
 
