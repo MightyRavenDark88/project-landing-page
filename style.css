@@ -73,11 +73,9 @@ body{
     gap: 8px;
 }
 .hero-box img{
-    /*border: solid red 5px;*/
     max-height: 60%;
     object-fit: contain;
     flex: 1;
-    border-radius: 40px;
 }
 .hero-info .title{
     font-weight: 900;
@@ -114,14 +112,12 @@ a{
     color:#1f2937;
 }
 .info-section{
-    border: solid red 1px;
     display: flex;
     flex:1;
     justify-content: center;
     width: 100%;
 }
 .info-tile{
-    border: solid red 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,12 +127,16 @@ a{
 }
 .info-tile img{
     border: solid #3882f6 5px;
+    border-radius: 16px;
     width: 200px;
     height: 200px;
     box-sizing: border-box;
 }
 .info-tile-text{
     text-wrap: wrap;
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-size: 18px;
 }
 .quote{
 
