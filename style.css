@@ -5,19 +5,23 @@
 }
 body{
     display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 .header{
     background-color: #1f2937;
     height: 30px;
     display: flex;
     align-items: center;
-    flex:1;
-    padding: 8px 0;
+    flex:0 0 auto;
+    padding: 16px 0;
 }
-.header .space{
-    flex:1 -1 200px;
+.middle-header{
+    width: 70%;
+    margin:auto;
+    display: flex;
 }
-.header div{
+.header-logo{
     font-size: 24px;
     color: #f9faf8;
     font-weight: 900;
@@ -33,15 +37,75 @@ body{
 .header ul{
     list-style: none;
     gap: 24px;
+    height: 30px;
     display: flex;
-    flex:2 0 auto;
+    flex:1 1 auto;
     justify-content: flex-end;
     margin:0;
     padding:0;
 }
 .hero{
-
+    /*border: solid brown 5px;*/
+    display: flex;
+    background-color: #1f2937;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
 }
+.hero-box{
+    /*border: solid yellow 5px;*/
+    background-color: #1f2937;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.hero-info{
+    /*border: dotted purple 5px;*/
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+}
+.hero-box img{
+    /*border: solid red 5px;*/
+    max-height: 60%;
+    object-fit: contain;
+    flex: 1;
+    border-radius: 40px;
+}
+.hero-info .title{
+    font-weight: 900;
+    font-size: 48px;
+    color: #f9faf8;
+    flex: 1 0 auto;
+}
+.hero-info .body,
+a{
+    font-size: 18px;
+    color: #e5e7eb;
+    flex: 0 0 auto;
+}
+.hero-info button{
+    background-color: rgb(60, 137, 252);
+    color: #e5e7eb;
+    font-size: 22px;
+    font-weight: bold;
+    width: 150px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+/*.space{
+    border: solid blue 5px;
+    height: 30px;
+    flex: 1 1 0px;
+}*/
 .information{
 
 }
