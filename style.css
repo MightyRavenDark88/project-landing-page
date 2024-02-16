@@ -92,7 +92,7 @@ a{
     flex: 0 0 auto;
 }
 .hero-info button{
-    background-color: rgb(60, 137, 252);
+    background-color: #3882f6;
     color: #e5e7eb;
     font-size: 22px;
     font-weight: bold;
@@ -102,7 +102,11 @@ a{
     border-radius: 8px;
 }
 .information{
-
+    display: flex;
+    height: 100%;
+}
+.info-header{
+    font: 36px bolder #1f2937;
 }
 .quote{
 
