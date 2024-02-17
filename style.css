@@ -24,22 +24,37 @@ body{
 }
 .middle-header{
     width: 70%;
+    height:100%;
+    flex: 0 0 auto;
     margin:auto;
     display: flex;
+    align-items: center;
 }
 .header-logo{
     font-size: 24px;
     color: #f9faf8;
     font-weight: 900;
     flex:3 0 auto;
+    
 }
 .header a{
     color: #f9faf8;
     text-decoration: none;
-    transition: 2s;
+    flex:0 0 auto;
+    height: max-content;
+    border-radius: 4px;
+    width:max-content;
+    padding: 8px;
+    transition: 0.3s;
+    float: left;
+}
+.header a:hover{
+    background-color: #f9faf8;
+    color: #1f2937;
 }
 .header li{
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 .header ul{
     list-style: none;
@@ -51,7 +66,7 @@ body{
     margin:0;
     padding:0;
 }
-.hero{
+#hero{
     /*border: solid brown 5px;*/
     display: flex;
     background-color: #1f2937;
