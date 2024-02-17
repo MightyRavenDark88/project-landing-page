@@ -3,6 +3,9 @@
     padding:0;
     font-family: Roboto;
 }
+html{
+    scroll-behavior:smooth
+}
 body{
     display: flex;
     flex-direction: column;
@@ -15,6 +18,9 @@ body{
     align-items: center;
     flex:0 0 auto;
     padding: 16px 0;
+    position:fixed;
+    top:0;
+    width:100%;
 }
 .middle-header{
     width: 70%;
@@ -30,6 +36,7 @@ body{
 .header a{
     color: #f9faf8;
     text-decoration: none;
+    transition: 2s;
 }
 .header li{
     text-align: center;
@@ -98,7 +105,7 @@ a{
     border: none;
     border-radius: 8px;
 }
-.information{
+#information{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,7 +151,7 @@ a{
     color: rgb(97, 97, 97);
     font-size: 18px;
 }
-.quote-section{
+#quote-section{
     display: flex;
     background-color: #e5e7eb;
     justify-content: center;
@@ -171,9 +178,53 @@ a{
     font-weight: bolder;
     font-size: 24px;
 }
-.advertisement{
-
+#advertisement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+.ad-box{
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 16px;
+    color: #f9faf8;
+    width: 66vw;
+    height: 200px;
+    padding: 36px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ad-box-text{
+    display: flex;
+    flex-direction: column;
+}
+.ad-box-text-header{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.ad-box-text-body{
+    font-size: 18px;
+}
+.ad-button{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    font-size: 22px;
+    font-weight: bold;
+    width: 150px;
+    padding: 8px;
+    border: solid #f9faf8 3px;
+    border-radius: 8px;
 }
 .footer{
-
+    background-color: #1f2937;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:0 0 auto;
+    padding: 16px 0;
+    color: #e5e7eb;
+    font-size: 22px;
 }
